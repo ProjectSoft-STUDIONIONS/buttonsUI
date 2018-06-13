@@ -1,0 +1,36 @@
+{
+	"name": "buttons_ui",
+	"version": "1.0.0",
+	"description": "jQuery plugin buttons UI style",
+	"main": "package.json",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/ProjectSoft-STUDIONIONS/buttonsUI.git"
+	},
+	"author": "ProjectSoft <projectsoft2009@yandex.ru>",
+	"license": "GPL-3.0",
+	"bugs": {
+		"url": "https://github.com/ProjectSoft-STUDIONIONS/buttonsUI/issues"
+	},
+	"homepage": "https://github.com/ProjectSoft-STUDIONIONS/buttonsUI#readme",
+	"devDependencies": {
+		"grunt": "^1.0.1",
+		"grunt-autoprefixer": "^3.0.4",
+		"grunt-contrib-concat": "^1.0.1",
+		"grunt-contrib-copy": "^1.0.0",
+		"grunt-contrib-imagemin": "^2.0.1",
+		"grunt-contrib-jshint": "^1.1.0",
+		"grunt-contrib-less": "^2.0.0",
+		"grunt-contrib-pug": "^1.0.0",
+		"grunt-contrib-requirejs": "^1.0.0",
+		"grunt-contrib-uglify": "^2.0.0",
+		"grunt-contrib-watch": "^1.0.0",
+		"grunt-notify": "git+https://github.com/ProjectSoft-STUDIONIONS/grunt-notify.git",
+		"less-plugin-clean-css": "^1.5.1",
+		"load-grunt-tasks": "^3.5.0",
+		"time-grunt": "^1.4.0"
+	}
+}

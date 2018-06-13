@@ -1,0 +1,22 @@
+{
+	"name": "buttons_ui",
+	"description": "jQuery plugin buttons UI style",
+	"main": "package.json",
+	"authors": [
+		"ProjectSoft <projectsoft2009@yandex.ru>"
+	],
+	"license": "GPL-3.0",
+	"homepage": "https://github.com/ProjectSoft-STUDIONIONS/buttonsUI",
+	"ignore": [
+		"**/.*",
+		"node_modules",
+		"bower_components",
+		"test",
+		"tests"
+	],
+	"devDependencies": {
+		"jquery": ">=3.3.1",
+		"normalize-css": "normalize.css#>=7.0.0",
+		"yepnope": ">=2.0.0"
+	}
+}
