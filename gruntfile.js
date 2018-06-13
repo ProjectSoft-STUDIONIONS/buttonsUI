@@ -4,7 +4,7 @@ module.exports = function(grunt){
 	var config = {
 		pkg: grunt.file.readJSON("package.json"),
 		meta: {
-			banners: "/*! <%= pkg.name %> v<%= pkg.version %> | <%= pkg.license %> License | <%= pkg.homepage %> */"
+			banners: "/*! <%= pkg.name %> v<%= pkg.version %> | <%= pkg.license %> License | <%= pkg.homepage %> */\n"
 		},
 		jshint: {
 			src: [
@@ -85,7 +85,7 @@ module.exports = function(grunt){
 				options: {
 					position: 'top',
 					banner: '<%= meta.banners %>',
-					linebreak: true,
+					linebreak: false,
 				},
 				files: {
 					src: [
@@ -153,6 +153,7 @@ module.exports = function(grunt){
 					'uglify',
 					'copy:javascript',
 					'usebanner',
+					'copy:destJs',
 					'notify:done'
 				]
 			},
@@ -177,6 +178,8 @@ module.exports = function(grunt){
 				tasks: [
 					'notify:watch',
 					'pug',
+					'copy:destJs',
+					'copy:destCss',
 					'notify:done'
 				]
 			},
@@ -204,12 +207,12 @@ module.exports = function(grunt){
 		'jshint',
 		'uglify',
 		'copy:javascript',
-		'copy:destJs',
 		'less',
 		'autoprefixer',
 		'pug',
-		'copy:destCss',
 		'usebanner',
+		'copy:destJs',
+		'copy:destCss',
 		'notify:done'
 	]);
 	grunt.registerTask('dev',	[
